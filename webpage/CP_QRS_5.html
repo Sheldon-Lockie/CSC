@@ -1,92 +1,69 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Chicago Pneumatic QRS-5</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <title>Common Sense Compressor</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="shortcut icon" href="favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="login.js"></script>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-     
-        <div class="header">
-            <div class="logo">
-                <img src="CSC-Logo-Large.jpg" alt="CSC-Logo-Lage" >
-            </div>
-            <div class="phone">
-                <div class="phone_button">
+        <div class="header" >
+            <div class="container-fluid" >
+                <div class="col-sm-4 .bg-light">
+                    <img class="img-responsive" src="CSC-Logo-Small.jpg">
+                </div>
+                <div class="col-sm-4" >    
                     <button class="phone_button" onclick="phone_click()">&#x260E 208-946-9282</button>
                 </div>
+                <div class="col-sm-4">
+                    <button class="login_button" onclick="login_page()">Login</button>                 
+                </div>   
             </div>
-            <div class="login">
-                <div class="login_button">
-                    <button class="login_button" onclick="login_page()">Login</button>
+        </div>            
+        <nav class ="navbar navbar-default">
+                <div class="container-fluid" style="background-color: #0687CB">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
-            </div>               
-        </div> 
-        <div class="nav">
-            <ul>
-                    <li><a href="index.html"><h1>Home</h1></a></li>
-                    <li><a href="shop.html"><h1>Shop</h1></a></li>
-                    <li><a href="about_us.html"><h1>About Us</h1></a></li>
-                
-            </ul>
-        </div>
-        <div class="product_body_cont">
-            <div class="prodcut_body_store">
-                <div class="product_page_img">
-                    <img src ="CP_QRS_5.jpg">
-                </div>
-                <div class="product_info_cont">
-                    <div class="product_info">
-                            <p>Test</p>
-                    </div>
-                    
-                </div>
-                <div class="quick_access_cont">
-                    <div class="quick_access">
-                        <h1>Quick Access</h1>
-                        <ul>
-                            <li><a href="#WhatIsTheCoorectLube.html">Lubricants</a></li>
-                            <li><a href="#WhatISTHECORRECTAIRFITLER.html">Air Filters</a></li>
-                            <li><a href="#WHATISTHECORRECTOILFILTER.html">Oil Filters</a></li>
-                            <li><a href="#WHATISTHECORRECTSEPEARTOR.html">Separators</a></li>
-                        </ul>
-                    </div>
-
+            </nav>
+        <div class="body">
+            <div class="container-fluid">
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="CP_QRS_5.jpg">
                 </div>
             </div>
         </div>
+        
         <div class="footer">
-            <div class="footer_panel_1">
-                <div class="footer_logo">
-                        <img src="CSC-Logo-Small.jpg" alt="CSC-Logo-Small">
-                </div>
-                <div class="footer_address">
-                    <p>Common Sense Compressor</p>
-                    <p>P.O Box 713</p>
-                    <p>Sagle, ID 83860</p>
-                </div>        
-                
-            </div>
-            <div class="footer_panel_2">
-                <div class="footer_panel_2_container">
-                    <h1>Navigation</h1>
-                    <a href="index.html">Home</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="about_us.html">About Us</a>
-
+                <div class="col-sm-12" style="background-color: #F6871E">
+                    <div class="col-sm-4"style="line-height:20px">
+                        <img class="img-responsive" src="CSC-Logo-Small.jpg">
+                        <p>Common Sense Compressor</p>
+                        <p>P.O. Box 713</p>
+                        <p>Sagle ID 83860</p>   
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h2>Navigation</h2>
+                        <p><a href="index.html">Home</p>
+                        <p><a href="shop.html">Shop</a>
+                        <p><a href="about_us.html">About Us</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer_panel_3">
-
+            <div class="col-sm-12" >
+                <div class="container-fluid text-center">
+                    <p>&#169 Common Sense Compressor 2018 All Rights Reserved</p> 
+                </div>  
             </div>
-            
-        </div>
-        <a>&#169 Common Sense Compressor 2018 All Rights Reserved</a>
+
     </body>
 
 </html>
