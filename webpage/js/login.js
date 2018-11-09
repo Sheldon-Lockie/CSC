@@ -8,10 +8,6 @@ function phone_click(){
     window.close();
     
 }
-
-function Option_1_Redir(){
-    document.location.href="CSC_Shop_Air_Comp.html";
-}
-function Option_2_Redir(){
-    document.location.href="CSC_Shop_Lubricants.html";
+function Product_Redir(){
+    document.location.href="default_prod_page.html";
 }
