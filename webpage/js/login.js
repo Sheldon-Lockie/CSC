@@ -11,3 +11,39 @@ function phone_click(){
 function Product_Redir(){
     document.location.href="default_prod_page.html";
 }
+function Air_Comp_Redir(){
+    document.location.href="AirCompressors.html";
+}
+function Air_Comp_UnRedir(){
+    document.location.href="shop.html";
+}
+function Dryers_Redir(){
+    document.location.href="Dryers.html";
+}
+function Dryers_UnRedir(){
+    document.location.href="shop.html";
+}
+function Piping_Redir(){
+    document.location.href="Piping.html";
+}
+function Piping_UnRedir(){
+    document.location.href="shop.html";
+}
+function Filter_Redir(){
+    document.location.href="Filters.html";
+}
+function Filter_UnRedir(){
+    document.location.href="shop.html";
+}
+function Separator_Redir(){
+    document.location.href="Separators.html";
+}
+function Separator_UnRedir(){
+    document.location.href="shop.html";
+}
+function Lubricants_Redir(){
+    document.location.href="Lubricants.html";
+}
+function Lubricants_UnRedir(){
+    document.location.href="shop.html";
+}
