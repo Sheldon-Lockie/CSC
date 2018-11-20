@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Common Sense Compressor</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="img/csc1.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/login.js"></script>
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129316895-1"></script>
+         <script>
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+             gtag('config', 'UA-129316895-1');
+         </script>
+    </head>
+    <body>
+        <div class="header" >
+            <div class="container-fluid" >
+                <div class="col-sm-4 .bg-light">
+                    <img class="img-responsive" src="img/CSC-Logo-Small.jpg" alt="CSC-Logo-Small">
+                </div>
+                <div class="col-sm-4" >    
+                    <button class="phone_button" onclick="phone_click()">&#x260E 208-946-9282</button>
+                </div>
+                <div class="col-sm-4"style="visibility: hidden">
+                    <button class="login_button" onclick="login_page()">Login</button>                 
+                </div>   
+            </div>
+        </div>            
+        <nav class ="navbar navbar-default">
+            <div class="container-fluid" style="background-color: #F6871E">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="nav_path"class="container-fluid">
+            <p style="font-size:14px"><a href="index.html">Home</a> &#8594 <a href="shop.html">Shop</a>
+                &#8594 <a href="AirCompressors.html">Air Compressors</a></p>
+        </div>
+        <div class="body">
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="img/CP_QRS_5.jpg" alt="Product_image">
+                </div>
+                <div class="col-sm-6">
+                    <h4>Chicago Pneumatic 5HP 3 phase 460v 60 Gal QRS5.0 HP Horizontal Air Compressor</h4>
+                    <hr>
+                    <h5>Part#:123456</h5>
+                    <hr>
+                    <span style="font-size: 15px">MSRP:$INSERT HERE</span><br>
+                    <span style="font-size: 20px">Price:$INSERT HERE</span>
+                    <!--<h4>Total Savings: 99%</h4>-->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-sm-6"style="padding-left:0px;">
+                        <button type="button" class="btn btn-primary btn-block" onclick="phone_click()">Call To Order</button>
+                    </div>
+                </div>
+                <div class="col-sm-2 " style="text-align: center">
+                    <!--<div class="panel panel-default">-->
+                        <button style="display:none" class="btn btn-block"id="Quick_Access_Drop" onclick="showElement('dropdown_info')">&#8659 Quick Access &#8659</button>
+                        <div id="dropdown_info"style="display:none">
+                            <hr>
+                            <hr>
+                            <a href="#Lubricants">Lubricants</a>
+                            <hr>
+                            <a href="#AirFilter">Air Filters</a>
+                            <hr>
+                            <a href="#OilFilter">Oil Filters</a>
+                            <hr>
+                            <a href="#Separators">Separators</a>
+                            <hr>
+                            <a href="#Service">Service</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="foot_cont"class="col-sm-12">
+                <hr>
+                <div class="col-sm-10">
+                    <div class="col-sm-3">    
+                        <button class="btn btn-block"id="Descrip_btn" value="Accessories" onclick="showElement('Descrip_div')">Description</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="spec_btn"value="Specifications"onclick="showElement('spec_table')">Specifications</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="warranty_btn"value="Warranty"onclick="showElement('warranty_div')">Warranty</button>
+                    </div>
+                    
+                </div>
+                <div id="Descrip_div" class="col-sm-8 panel panel-default" style="display:block">
+                    <h4>This would be a description for the product</h4>
+                </div>
+                <div id="spec_table"class="col-sm-8 panel panel-default" style="display: none">
+                    <div id="part_line"class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6">
+                            <span>Part Number</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Horse Power</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Max Pressure</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>acfm@150psi</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style" style="background-color:#d1d1e0">
+                            <span>Sound Level</span>
+                        </div>
+                        <div class="col-sm-6"style="background-color:#d1d1e0">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Voltage/Phase</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Tank Size</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Dimensions (in.)</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Base Weight</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="warranty_div"class="col-sm-8 panel panel-default" style="display:none">
+                        <h1>BLAH BLAH BLAH BLAH Warranty</h1>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <div class="col-sm-12" style="background-color: #F6871E">
+                    <div class="col-sm-4"style="line-height:20px">
+                        <img class="img-responsive" src="img/CSC-Logo-Small.jpg" alt="CSC-Logo-Small">
+                        <p>Common Sense Compressor</p>
+                        <p>P.O. Box 713</p>
+                        <p>Sagle ID 83860</p>   
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h2>Navigation</h2>
+                        <p><a href="index.html">Home</p>
+                        <p><a href="contact_us.html">Contact Us</a> 
+                        <p><a href="shop.html">Shop</a>   
+                        <p><a href="about_us.html">About Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" >
+                <div class="container-fluid text-center">
+                    <p>&#169 Common Sense Compressor 2018 All Rights Reserved</p> 
+                </div>  
+            </div>
+        </body>
+    
+    </html>
