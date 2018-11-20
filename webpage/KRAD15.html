@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Common Sense Compressor</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="img/csc1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/login.js"></script>
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129316895-1"></script>
+         <script>
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+             gtag('config', 'UA-129316895-1');
+         </script>
+    </head>
+    <body>
+        <div class="header" >
+            <div class="container-fluid" >
+                <div class="col-sm-4 .bg-light">
+                    <img class="img-responsive" src="img/CSC-Logo-Small.jpg" alt="CSC-Logo-Small">
+                </div>
+                <div class="col-sm-4" >    
+                    <button class="phone_button" onclick="phone_click()">&#x260E 208-946-9282</button>
+                </div>
+                <div class="col-sm-4"style="visibility: hidden">
+                    <button class="login_button" onclick="login_page()">Login</button>                 
+                </div>   
+            </div>
+        </div>            
+        <nav class ="navbar navbar-default">
+            <div class="container-fluid" style="background-color: #F6871E">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="nav_path"class="container-fluid">
+            <p style="font-size:14px"><a href="index.html">Home</a> &#8594 <a href="shop.html">Shop</a>
+                &#8594 <a href="Dryers.html">Air Dryers</a>&#8594 <a href="KRAD10.html">KRAD10</a></p>
+        </div>
+        <div class="body">
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="img/keltec__medium.jpg" alt="Product_image">
+                </div>
+                <div class="col-sm-6">
+                    <h4>Keltec 10cfm 115v Single Phase Air Dryer</h4>
+                    <hr>
+                    <h5>Part#:KRAD 10</h5>
+                    <hr>
+                    <span style="font-size: 20px">Price:$960.00</span>
+                    <!--<h4>Total Savings: 99%</h4>-->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-sm-6"style="padding-left:0px;">
+                        <button type="button" class="btn btn-primary btn-block" onclick="phone_click()">Call To Order</button>
+                    </div>
+                </div>
+                <div class="col-sm-2 " style="text-align: center">
+                    <!--<div class="panel panel-default">-->
+                        <button style="display:none" class="btn btn-block"id="Quick_Access_Drop" onclick="showElement('dropdown_info')">&#8659 Quick Access &#8659</button>
+                        <div id="dropdown_info"style="display:none">
+                            <hr>
+                            <hr>
+                            <a href="#Lubricants">Lubricants</a>
+                            <hr>
+                            <a href="#AirFilter">Air Filters</a>
+                            <hr>
+                            <a href="#OilFilter">Oil Filters</a>
+                            <hr>
+                            <a href="#Separators">Separators</a>
+                            <hr>
+                            <a href="#Service">Service</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="foot_cont"class="col-sm-12">
+                <hr>
+                <div class="col-sm-10">
+                    <div class="col-sm-3">    
+                        <button class="btn btn-block"id="Descrip_btn" value="Accessories" onclick="showElement('Descrip_div')">Description</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="spec_btn"value="Specifications"onclick="showElement('spec_table')">Specifications</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="warranty_btn"value="Warranty"onclick="showElement('warranty_div')">Warranty</button>
+                    </div>
+                    
+                </div>
+                <div id="Descrip_div" class="col-sm-8 panel panel-default" style="display:block">
+                    <h4>This would be a description for the product</h4>
+                </div>
+                <div id="spec_table"class="col-sm-8 panel panel-default" style="display: none">
+                    <div id="part_line"class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6">
+                            <span>Part Number</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >KRAD10</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Air Flow Rate</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>10 cfm</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Voltage/Phase</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >115/1/60</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Air Connection</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>1/2" NPT</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style" style="background-color:#d1d1e0">
+                            <span>Maximum Inlet Temperature</span>
+                        </div>
+                        <div class="col-sm-6"style="background-color:#d1d1e0">
+                            <span>140&#176F</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="warranty_div"class="col-sm-8 panel panel-default" style="display:none">
+                        <h4>Warranty to be free from defects in material and worksmanship for a period of twenty four
+                            (24) months from the date of receipt, not to exceed thirty(30)months from the factroy ship date.
+                        </h4>
+                        <a target="_black"href="Documents\Warranty\KRAD10-1200_Warranty.pdf">KRAD10-1200_Warranty <i style="font-size:24px" class="fa">&#xf0c7;</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <div class="col-sm-12" style="background-color: #F6871E">
+                    <div class="col-sm-4"style="line-height:20px">
+                        <img class="img-responsive" src="img/CSC-Logo-Small.jpg" alt="CSC-Logo-Small">
+                        <p>Common Sense Compressor</p>
+                        <p>P.O. Box 713</p>
+                        <p>Sagle ID 83860</p>   
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h2>Navigation</h2>
+                        <p><a href="index.html">Home</p>
+                        <p><a href="contact_us.html">Contact Us</a> 
+                        <p><a href="shop.html">Shop</a>   
+                        <p><a href="about_us.html">About Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" >
+                <div class="container-fluid text-center">
+                    <p>&#169 Common Sense Compressor 2018 All Rights Reserved</p> 
+                </div>  
+            </div>
+        </body>
+    
+    </html>
