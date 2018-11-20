@@ -53,14 +53,19 @@
                     <hr>
                     <h5>Part#:123456</h5>
                     <hr>
-                    <p>MSRP:$INSERT HERE</p>
-                    <h3>Price:$INSERT HERE</h3>
-                    <h4>Total Savings: 99%</h4>
-                    <button type="button" class="btn btn-primary" onclick="phone_click()">Call To Order</button>
+                    <span style="font-size: 15px">MSRP:$INSERT HERE</span><br>
+                    <span style="font-size: 20px">Price:$INSERT HERE</span>
+                    <!--<h4>Total Savings: 99%</h4>-->
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-sm-6"style="padding-left:0px;">
+                        <button type="button" class="btn btn-primary btn-block" onclick="phone_click()">Call To Order</button>
+                    </div>
                 </div>
                 <div class="col-sm-2 " style="text-align: center">
-                    <div class="panel panel-default">
-                        <button class="btn btn-block"id="Quick_Access_Drop" onclick="showElement('dropdown_info')">&#8659 Quick Access &#8659</button>
+                    <!--<div class="panel panel-default">-->
+                        <button style="display:none" class="btn btn-block"id="Quick_Access_Drop" onclick="showElement('dropdown_info')">&#8659 Quick Access &#8659</button>
                         <div id="dropdown_info"style="display:none">
                             <hr>
                             <hr>
@@ -82,7 +87,7 @@
                 <hr>
                 <div class="col-sm-10">
                     <div class="col-sm-3">    
-                                <button class="btn btn-block"id="Descrip_btn" value="Accessories" onclick="showElement('Descrip_div')">Description</button>
+                        <button class="btn btn-block"id="Descrip_btn" value="Accessories" onclick="showElement('Descrip_div')">Description</button>
                     </div>
                     <div class="col-sm-3">
                         <button class="btn btn-block" id="spec_btn"value="Specifications"onclick="showElement('spec_table')">Specifications</button>
@@ -169,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="warranty_div"class="col-sm-12" style="display:none">
+                <div id="warranty_div"class="col-sm-8 panel panel-default" style="display:none">
                         <h1>BLAH BLAH BLAH BLAH Warranty</h1>
                 </div>
             </div>

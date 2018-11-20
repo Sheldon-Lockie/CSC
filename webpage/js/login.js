@@ -4,7 +4,7 @@ function login_page(){
     document.location.href="CSC_Login.html";
 }
 function phone_click(){
-    window.open("tel:2089469282");
+    window.open("tel:/2089469282");
     window.close();
     
 }
