@@ -47,6 +47,13 @@ function Lubricants_Redir(){
 function Lubricants_UnRedir(){
     document.location.href="shop.html";
 }
-function Change_text(value){
-    document.getElementById('info_text').innerHTML="You Pressed "+value;
+
+function showElement(elementId){
+    var element= document.getElementById(elementId);
+    if(element.style.display ==="none"){
+        element.style.display = "block";
+    }
+    else{
+        element.style.display="none";
+    }
 }

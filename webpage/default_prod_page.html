@@ -56,118 +56,121 @@
                     <p>MSRP:$INSERT HERE</p>
                     <h3>Price:$INSERT HERE</h3>
                     <h4>Total Savings: 99%</h4>
-                    <button onclick="phone_click()">Call To Order</button>
+                    <button type="button" class="btn btn-primary" onclick="phone_click()">Call To Order</button>
                 </div>
                 <div class="col-sm-2 " style="text-align: center">
                     <div class="panel panel-default">
-                        <h5>Quick Access</h5>
-                        <hr>
-                        <hr>
-                        <a href="#Lubricants">Lubricants</a>
-                        <hr>
-                        <a href="#AirFilter">Air Filters</a>
-                        <hr>
-                        <a href="#OilFilter">Oil Filters</a>
-                        <hr>
-                        <a href="#Separators">Separators</a>
-                        <hr>
-                        <a href="#Service">Service</a>
-                        <hr>
+                        <button class="btn btn-block"id="Quick_Access_Drop" onclick="showElement('dropdown_info')">&#8659 Quick Access &#8659</button>
+                        <div id="dropdown_info"style="display:none">
+                            <hr>
+                            <hr>
+                            <a href="#Lubricants">Lubricants</a>
+                            <hr>
+                            <a href="#AirFilter">Air Filters</a>
+                            <hr>
+                            <a href="#OilFilter">Oil Filters</a>
+                            <hr>
+                            <a href="#Separators">Separators</a>
+                            <hr>
+                            <a href="#Service">Service</a>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12">
+            <div  id="foot_cont"class="col-sm-12">
                 <hr>
                 <div class="col-sm-10">
-                    <div class="col-sm-3">
-                        <button class="btn btn-block" id="spec_btn"value="Specifications"onclick="Change_text(this.value)">Specifications</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button class="btn btn-block" id="warranty_btn"value="Warranty"onclick="Change_text(this.value)">Warranty</button>
-                    </div>
                     <div class="col-sm-3">    
-                        <button class="btn btn-block"id="Access_btn" value="Accessories" onclick="Change_text(this.value)">Accessories</button>
+                                <button class="btn btn-block"id="Descrip_btn" value="Accessories" onclick="showElement('Descrip_div')">Description</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="spec_btn"value="Specifications"onclick="showElement('spec_table')">Specifications</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-block" id="warranty_btn"value="Warranty"onclick="showElement('warranty_div')">Warranty</button>
+                    </div>
+                    
+                </div>
+                <div id="Descrip_div" class="col-sm-8 panel panel-default" style="display:block">
+                    <h4>This would be a description for the product</h4>
+                </div>
+                <div id="spec_table"class="col-sm-8 panel panel-default" style="display: none">
+                    <div id="part_line"class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6">
+                            <span>Part Number</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Horse Power</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Max Pressure</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>acfm@150psi</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style" style="background-color:#d1d1e0">
+                            <span>Sound Level</span>
+                        </div>
+                        <div class="col-sm-6"style="background-color:#d1d1e0">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Voltage/Phase</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Tank Size</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6 style">
+                            <span>Dimensions (in.)</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>XXX</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"style="background-color:#d1d1e0">
+                        <div class="col-sm-6 style">
+                            <span>Base Weight</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span >XXX</span>
+                        </div>
                     </div>
                 </div>
-                <!--
-                <div class="col-sm-12">
-                    <div class="col-sm-8 panel panel-default">
-                        <div class="col-sm-12"style="background-color:#f9f9f9" >
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Part Number</span>
-                            </div>
-                            <div class="col-sm-6">
-
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold;border-right:2px solid black">HorsePower</span>
-                            </div>
-                            <div class="col-sm-6">
-    
-                            </div>
-                        </div>
-                        <div class="col-sm-12"style="background-color:#f9f9f9">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Max Pressure</span>
-                            </div>
-                            <div class="col-sm-6">
-        
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">acfm @ 150psi</span>
-                            </div>
-                            <div class="col-sm-6">
-            
-                            </div>
-                        </div>
-                        <div class="col-sm-12"style="background-color:#f9f9f9">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Sound Level</span>
-                            </div>
-                            <div class="col-sm-6">
-                
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Voltage/Phase</span>
-                            </div>
-                            <div class="col-sm-6">
-
-                            </div>
-                        </div>
-                        <div class="col-sm-12"style="background-color:#f9f9f9">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Tank Size</span>
-                            </div>
-                            <div class="col-sm-6">
-            
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold" >Dimensions(in.)</span>
-                            </div>
-                            <div class="col-sm-6">
-                
-                            </div>
-                        </div>
-                        <div class="col-sm-12"style="background-color:#f9f9f9">
-                            <div class="col-sm-6">
-                                <span style="font-size:20px; font-weight:bold">Base Weight</span>
-                            </div>
-                            <div class="col-sm-6">
-                    
-                            </div>
-                        </div>
-                    </div>    
-                </div>-->
-                <div class="col-sm-12">
-                    <p id="info_text">Default Specifications</p>
+                <div id="warranty_div"class="col-sm-12" style="display:none">
+                        <h1>BLAH BLAH BLAH BLAH Warranty</h1>
                 </div>
             </div>
         </div>
